@@ -1,5 +1,28 @@
 # EB CLI Installer
 
+## 0. Easy Install with [pipx](https://pypa.github.io/pipx/)
+
+pipx handles the isolated virtual environment creation for the `awsebcli` package.
+
+```shell
+python -m pip install pipx
+
+pipx install awsebcli
+```
+
+Other use cases with pipx:
+
+```shell
+# Install a specific versoin
+pipx install awsebcli==3.2.0
+
+# Use a specific Python version
+pipx install awsebcli --python /path/to/python
+
+# Upgrade to latest version
+pipx upgrade awsebcli
+```
+
 ## 1. Overview
 
 This repository hosts scripts to generate self-contained installations of the [EB CLI](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html).
